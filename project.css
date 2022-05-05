@@ -1,0 +1,1225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: segoe ui light;
+}
+.thanhmenu{
+    width: 1900px;
+    height: 120px;
+    display: flex;
+}
+.thanhmenu .a{
+    width: 254px;
+    height: 100%;
+}
+.thanhmenu .menugiua{
+    width: 700px;
+    height: 100%;
+    display: flex;
+}
+.thanhmenu .menugiua ul{   
+    font-family: segoe ui light;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 30px;
+    display: flex;
+}
+.thanhmenu .menugiua ul li{
+    list-style: none;
+    display: inline;
+    padding-right:30px;
+    color: gray;   
+}
+.menugiua .listmenu1{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.menugiua .listmenu1 .menu1{
+    width: 50px;
+    display: flex;
+}
+.menugiua .listmenu1 .menu1 i{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.menugiua .listmenu1 .menu2{
+    background-color: red;
+    opacity: 0;
+    top: 40px;
+    transition: 0.5s;
+}
+.menugiua .listmenu1:hover .menu2{
+    top: 0px;
+    opacity: 1;
+}
+.box{
+    position: absolute;
+    top: 65px;
+    left: 79%;
+    transform: translate(-50%,-50%);
+    background: orange;
+    height: 40px;
+    border-radius: 40px;
+}
+.box .btsearch{
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-color: black;  
+}
+.box:hover > .searchtxt{
+    width: 100px;
+    padding: 0 6px;
+}
+.box:hover > .btsearch{
+    background: white;
+}
+.box .searchtxt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+.search .span .icon{
+    padding-right: 5px;
+}
+.thanhmenu .iconnho{
+    width: 869.3px;
+    height: 100%;
+    font-size: 30px;
+    padding-top: 43px;
+    padding-left: 650px;
+}
+.thanhmenu .iconnho a{
+    text-decoration:none;
+    padding-right: 20px;
+}
+/* hieu ung slide */
+.thanhmenu .myslide{
+    height: 400px;
+}
+.myslide .carousel-indicators{
+    opacity: 0;
+}
+.myimg img{
+    height: 859px;
+    width: 1900px;
+}
+/* phan body
+cao 977 */
+.sanpham{
+    width: 1900px;
+    height: 977px;
+    display: flex;
+}
+/* sanphamtrai */
+.sanpham .sptraito{
+    width: 1266.6667px;
+    height: 977px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.sptraito .traitren{
+    width: 1266.6667px;
+    height: 488.5px;
+    display: flex;
+}
+.traitren .trentrai{
+    width: 633.3333px;
+    height: 488.5px;
+    position: relative;
+    overflow: hidden;
+}
+.traitren .trentrai  img{
+    width: 633.3333px;
+    height: 488.5px;
+    top: 0;
+    left: 0;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+.traitren .trentrai:hover  img{
+    left: 20px;
+}
+.trentrai .nentrang{
+    background-color: white;
+    position: absolute;
+    width: 633.3333px;
+    height: 488.5px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.trentrai:hover .nentrang{
+    background-color: white;
+    opacity: 0.7;
+}
+.trentrai .chu{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 34%;
+    margin-left: 40%;
+}
+.trentrai .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 40px;
+}
+.trentrai:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.trentrai .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 18px;
+    left: 30px;
+}
+.trentrai:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.traitren .trenphai{
+    width: 633.3333px;
+    height: 488.5px;
+    position: relative;
+    overflow: hidden;
+}
+.trenphai .a img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.traitren .trenphai img{
+    width: 633.3333px;
+    height: 488.5px;
+    top: 0;
+    left: 0;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+.traitren .trenphai:hover img{
+    left: 20px;
+}
+.traitren .trenphai .nentrang{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.traitren .trenphai:hover .nentrang{
+    opacity: 0.7;
+}
+.traitren .trenphai .chu{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 34%;
+    margin-left: 40%;
+}
+.trenphai .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 40px;
+    color: black;
+}
+.trenphai:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.trenphai .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 18px;
+    left: 30px;
+}
+.trenphai:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.sanpham .spphaito{
+    width: 633.3333px;
+    height: 488.5px;
+}
+.sptraito .traiduoi{
+    width: 1266.6667px;
+    height: 488.5px;
+    position: relative;
+    overflow: hidden;
+}
+.sptraito .traiduoi img{
+    width: 1300.6667px;
+    height: 488.5px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+.sptraito .traiduoi:hover img{
+    left: -20px;
+}
+.traiduoi .nentrang{
+    width: 1266.6667px;
+    height: 488.5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.traiduoi:hover .nentrang{
+    opacity: 0.7;
+}
+.traiduoi .chu{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 19%;
+    margin-left: 40%;
+}
+.traiduoi .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 40px;
+    color: black;
+}
+.traiduoi:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.traiduoi .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 18px;
+    left: 30px;
+}
+.traiduoi:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+/* sanphamphai */
+.sanpham .spphaito{
+    width: 633.3333px;
+    height: 977px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.spphaito img{
+    width: 663.3333px;
+    height: 977px;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+.spphaito:hover img{
+    left:-20px;
+}
+.spphaito .nentrang{
+    width: 633.3333px;
+    height: 977px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.spphaito:hover .nentrang{
+    opacity: 0.7;
+}
+.spphaito .chu{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 75%;
+    margin-left: 44%;
+}
+.spphaito .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 40px;
+    color: black;
+}
+.spphaito:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.spphaito .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 18px;
+    left: 30px;
+}
+.spphaito:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+/* sanpham */
+.docongnghe{
+    width: 1900px;
+    height: 977px;
+    display: flex;
+    flex-direction: column;
+}
+.docongnghe .tren{
+    width: 1900px;
+    height: 488.5px;
+    display: flex;
+    flex-direction: row;
+}
+.docongnghe .duoi{
+    width: 1900px;
+    height: 488.5px;
+    display: flex;
+    flex-direction: row;
+}
+.docongnghe .duoi img{
+    width: 475px;
+    height:488.5px;
+}
+/* hinh1 */
+.docongnghe .tren .hinh1{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .tren .hinh1 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tren .hinh1 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tren .hinh1:hover .nentrang{
+    opacity: 0.7;
+}
+.tren .hinh1 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tren .hinh1 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.tren .hinh1:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh1 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh1:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh1 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh1:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh1 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh2 */
+.docongnghe .tren .hinh2{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .tren .hinh2 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tren .hinh2 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tren .hinh2:hover .nentrang{
+    opacity: 0.7;
+}
+.tren .hinh2 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tren .hinh2 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.tren .hinh2:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh2 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh2:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh2 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh2:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh2 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh3 */
+.docongnghe .tren .hinh3{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .tren .hinh3 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tren .hinh3 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tren .hinh3:hover .nentrang{
+    opacity: 0.7;
+}
+.tren .hinh3 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tren .hinh3 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.tren .hinh3:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh3 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh3:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh3 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh3:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh3 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh4 */
+.docongnghe .tren .hinh4{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .tren .hinh4 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tren .hinh4 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tren .hinh4:hover .nentrang{
+    opacity: 0.7;
+}
+.tren .hinh4 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tren .hinh4 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.tren .hinh4:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh4 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh4:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.tren .hinh4 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.tren .hinh4:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh4 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh5 */
+.docongnghe .duoi .hinh5{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .duoi .hinh5 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.duoi .hinh5 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.duoi .hinh5:hover .nentrang{
+    opacity: 0.7;
+}
+.duoi .hinh5 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.duoi .hinh5 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.duoi .hinh5:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh5 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh5:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh5 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh5:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh5 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh6 */
+.docongnghe .duoi .hinh6{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .duoi .hinh6 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.duoi .hinh6 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.duoi .hinh6:hover .nentrang{
+    opacity: 0.7;
+}
+.duoi .hinh6 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.duoi .hinh6 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.duoi .hinh6:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh6 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh6:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh6 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh6:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh6 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh7 */
+.docongnghe .duoi .hinh7{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .duoi .hinh7 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.duoi .hinh7 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.duoi .hinh7:hover .nentrang{
+    opacity: 0.7;
+}
+.duoi .hinh7 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.duoi .hinh7 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.duoi .hinh7:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh7 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh7:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh7 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh7:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh7 .chu .icon span{
+    padding-right: 30px;
+}
+/* hinh8 */
+.docongnghe .duoi .hinh8{
+    width: 475px;
+    height: 488.5px;
+    position: relative;
+}
+.docongnghe .duoi .hinh8 img{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.duoi .hinh8 .nentrang{
+    width: 475px;
+    height: 488.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.duoi .hinh8:hover .nentrang{
+    opacity: 0.7;
+}
+.duoi .hinh8 .chu{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.duoi .hinh8 .chu .chuto{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 20px;
+    color: black;
+}
+.duoi .hinh8:hover .chu .chuto{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh8 .chu .chunho{
+    position: relative;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh8:hover .chu .chunho{
+    top: 0;
+    opacity: 1;
+}
+.duoi .hinh8 .chu .icon{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+}
+.duoi .hinh8:hover .chu .icon{
+    top: 0;
+    opacity: 1;
+}
+.hinh8 .chu .icon span{
+    padding-right: 30px;
+}
+.sell{
+    width: 1900px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ---------- */
+.sell .lienlac{
+    width: 630.3333px;
+    height: 200px;
+    margin-top: 150px;
+}
+.sell .lienlac span{
+    font-size: 35px;
+}
+.sell .lienlac .sdt{
+    font-size:40px;
+}
+.sell .lienlac .nd{
+    font-size: 20px;
+}
+/* -------- */
+.sell .muaban{
+    width: 630.3333px;
+    height: 200px;
+    margin-top: 150px;
+}
+.sell .muaban span{
+    font-size: 35px;
+}
+.sell .muaban .tieude{
+    font-size:40px;
+}
+.sell .muaban .noidung{
+    font-size: 20px;
+}
+/* --------- */
+.sell .doitra{
+    width: 630.3333px;
+    height: 200px;
+    margin-top: 150px;
+}
+.sell .doitra span{
+    font-size: 35px;
+}
+.sell .doitra .tieude{
+    font-size:40px;
+}
+.sell .doitra .noidung{
+    font-size: 20px;
+}
+/* end */
+.end{
+    width: 1900px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(46, 43, 43);
+    color: white;
+}
+/* endtrai */
+.end .endtrai{
+    width: 633.3333px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.end .endtrai a{
+    text-decoration: none;
+}
+.end .endtrai a img{
+    width: 200px;
+    height: 50px;
+}
+.endtrai .cot1 span{
+    font-size: 11px;
+    width: 340px;
+    height: 30px;
+    margin-top: 155px;
+    margin-left: 20px;
+}
+.end .endtrai .cot1{
+    width: 340px;
+    height: 40px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.end .endtrai .cot2{
+    margin-left: 60px;
+}
+.endtrai .cot2 ul{
+    list-style: none;
+}
+.endtrai .cot2 ul li{
+    padding-top: 5px;
+}
+/* endgiua */
+.end .endgiua{
+    width: 633.3333px;
+    height: 300px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.end .endgiua a{
+    text-decoration: none;
+}
+.endgiua .listtrai{
+    width: 300px;
+    height: 300px;
+}
+.endgiua .listtrai ul{
+    list-style: none;
+}
+.endgiua .listtrai ul li{
+    padding-top: 5px;
+}
+.endgiua .listphai{
+    width: 300px;
+    height: 300px;
+}
+.endgiua .listphai ul{
+    list-style: none;
+}
+.endgiua .listphai ul li{
+    padding-top: 5px;
+}
+/* endphai */
+.end .endphai{
+    width: 633.3333px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.endphai .tieude{
+    font-size: 20px;
+}
+.endphai .noidung{
+    margin-top: 15px;
+    color: rgb(83, 82, 82);
+    font-size: 18px;
+}
+.endphai .khungmail {
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+
+}
+.endphai .khungmail form{
+    height: 30px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.khungmail .btn{
+    width: 94px;
+    height: 38px;
+    background-color: orange;
+    transition: 0.8s;
+}
+.khungmail .btn:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+.endphai .link{
+    width: 600px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+.endphai .link span{
+    padding-left: 15px;
+}
